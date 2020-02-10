@@ -4438,6 +4438,36 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "Business/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Business.dll": {}
+        }
+      },
+      "Data/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Data.dll": {}
+        }
+      },
+      "Utility/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Utility.dll": {}
+        }
       }
     }
   },
@@ -12120,13 +12150,31 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "Business/1.0.0": {
+      "type": "project",
+      "path": "../Business/Business.csproj",
+      "msbuildProject": "../Business/Business.csproj"
+    },
+    "Data/1.0.0": {
+      "type": "project",
+      "path": "../Data/Data.csproj",
+      "msbuildProject": "../Data/Data.csproj"
+    },
+    "Utility/1.0.0": {
+      "type": "project",
+      "path": "../Utility/Utility.csproj",
+      "msbuildProject": "../Utility/Utility.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "Business >= 1.0.0",
+      "Data >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
-      "Microsoft.NETCore.App >= 2.2.0"
+      "Microsoft.NETCore.App >= 2.2.0",
+      "Utility >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -12158,7 +12206,17 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\PROJECTS\\VehicleTracking\\AgencyVehicleTracking\\Business\\Business.csproj": {
+              "projectPath": "C:\\PROJECTS\\VehicleTracking\\AgencyVehicleTracking\\Business\\Business.csproj"
+            },
+            "C:\\PROJECTS\\VehicleTracking\\AgencyVehicleTracking\\Data\\Data.csproj": {
+              "projectPath": "C:\\PROJECTS\\VehicleTracking\\AgencyVehicleTracking\\Data\\Data.csproj"
+            },
+            "C:\\PROJECTS\\VehicleTracking\\AgencyVehicleTracking\\Utility\\Utility.csproj": {
+              "projectPath": "C:\\PROJECTS\\VehicleTracking\\AgencyVehicleTracking\\Utility\\Utility.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
